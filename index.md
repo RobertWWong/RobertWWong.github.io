@@ -4,7 +4,7 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](jekyll_docs/another-page).
+[Link to another page](jekyll_docs/another-pageasd).
 
 There should be whitespace between paragraphs.
 
