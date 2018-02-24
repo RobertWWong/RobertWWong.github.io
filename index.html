@@ -22,7 +22,8 @@
     
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-
+<!--    Animations from font awesome. Got to get some sort of attention-->
+    <link rel="stylesheet" href="vendor/font-awesome/font-awesome-animation.min.css">
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
@@ -64,6 +65,13 @@
       </div>
     </nav>
 
+   <div class="float-md-right" >
+           <img src="img/UCI.jpeg" alt="">
+           <br>
+            <span style="color: purple">Undergrad of UCI</span><br>
+            <span style="color: green">Computer Science</span><br>
+            <span style="color: brown">Class of 2018</span><br>    
+        </div>
     <div class="container-fluid p-0">
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
@@ -71,6 +79,7 @@
           <h1 class="mb-0">Robert
             <span class="text-primary">Wong</span>
           </h1>
+
           <div class="subheading mb-5">Lancaster, CA · (661) 860-5775 ·
             <a href="mailto:name@email.com">robertww@uci.edu</a>
           </div>
@@ -81,7 +90,7 @@
             <li class="list-inline-item">
               <a href="https://www.facebook.com/rob.wong.583">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-circle fa-stack-2x" style="color: #3b5998"></i>
                   <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
@@ -89,7 +98,7 @@
             <li class="list-inline-item">
               <a href="https://twitter.com/WongWayToGo">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-circle fa-stack-2x" style="color:#00aced"></i>
                   <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
@@ -97,7 +106,7 @@
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/robert-wong-06337aa5/">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-circle fa-stack-2x" style="color: #0077B5"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
@@ -112,6 +121,7 @@
             </li>
           </ul>
         </div>
+        
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
@@ -124,7 +134,10 @@
               <h3 class="mb-0">Web App Developer | Project Lead</h3>
               <div class="subheading mb-2">Curb-N Ride Sharing Web App</div>
               <p>
-                  
+                 ●Designed and drafted an dynamic web application that displays regional events and connects users travelling to events with one another as potential drivers/riders <br>
+● Managed and coordinated task to members in product research, software architecture, development, and deployment <br>
+● Demonstrated our application’s partial functionalities to the professor, including development cycle, inspiration, type of search system used, impact made, and potential patch fixes in the future <br>
+● Wrote a web scraping scripts using Eventbrite API to gather and display regional events’ information
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -137,7 +150,9 @@
               <h3 class="mb-0">Back End Developer | Technical Engineer</h3>
               <div class="subheading mb-3">Clubtree: A Club Organization Web App</div>
               <p>
-                  
+● Contributed to the development of a unified campus clubs application, where discussions, notifications, recruitments and application processes are more easily accessible, responsive, and intuitive. <br>
+● Created an API to insert users into a database with the help of MongoDB and NodeJS <br>
+● Provide feedback for the software’s hierarchy and discussed its functionalities and implementation
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -147,10 +162,15 @@
           
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Connect-K-AIProject</h3>
+              <h3 class="mb-0 faa-float animated">
+              <a href="https://github.com/RobertWWong/Connect-K-AIProject">
+               Connect-K-AIProject   <i></i>
+              </a></h3>
               <div class="subheading mb-3">A University Class Project for Introduction to AI</div>
               <p>
-                  
+                 A game project for my Intro to AI class at UCI. It's a variant of the connect 4 game.
+                 I implemented a heurisitc using a minimax and alpha beta pruning algorithm which drastically reduce the amount of decision made before a solution is chosen. 
+                 This improved the AI solution time by 66.67% (from 21 seconds to 7 seconds)
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -168,6 +188,7 @@
               <p>
                   Written during my time at 42 Bootcamp. It will try to find the biggest possible square given some info.
               </p>
+              <a href="https://github.com/RobertWWong/piscine42/tree/master/bsq/biggest_sq"><p class="faa-float animated">Take a look! (Executable coming soon)</p></a>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">January 29, 2018 – January 31</span>
@@ -186,7 +207,7 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">University of California, Irvine </h3>
               <div class="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science</div>
+              <div>B.S. in Computer Science</div>
               
             </div>
             <div class="resume-date text-md-right">
@@ -203,20 +224,48 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
            <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicon-python-plain"> Python3</i>
+              <i class="devicon-python-plain colored"> Python3</i>
               <h3>
-                  Numpy |  Pandas | Matplotlib <br>Basically Pseudo Code
+                  Numpy |  Pandas | Matplotlib <br>
+                  
+                  <a href="https://github.com/RobertWWong/Geodetic-Height-Calculation-via-Numpy-Pandas-and-Matplotlib">
+                  <p class="faa-passing animated">    
+                  Basically Pseudo Code
+                  </p>
+                  </a>
               </h3>              
             </li>
             <li class="list-inline-item">
-                <i class="devicon-c-plain"> C/C++</i>
+                <i class="devicon-c-plain colored"> C/C++</i>
                 <h3>
-                    It's Fast, It's Deadly,<br> It's a Segmentation Fault
+                    It's Fast, It's Deadly,<br> 
+                    <a href="https://github.com/RobertWWong/Connect-K-AIProject">
+                        <p class="faa-flash animated">
+                        It's a Segmentation Fault
+                        </p>
+                        </a>    
                 </h3>
             </li>
             <li class="list-inline-item">
-                <i class="devicon-angularjs-plain">
+                <i class="devicon-angularjs-plain colored">
+                   <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                   <i class="devicon-nodejs-plain-wordmark colored"></i>
                     <h3>
+                        It's a nice day outside <br>
+                        Isn't it?
+                    </h3>
+                </i>
+            </li>
+            
+            <br>
+            
+            <li class="list-inline-item">
+                <i class="devicon-heroku-plain-wordmark colored">
+                   <i class="devicon-django-plain colored"></i>
+                    <h3>
+                        I wonder how they got
+                        <a href="https://ritosearch.herokuapp.com">that</a><br>
+                        up  over <a href="http://thatfakereddit.herokuapp.com">there?</a>
                         
                     </h3>
                 </i>
@@ -230,45 +279,26 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
            <h2 class="mb-5">Interests</h2>
-<!--
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p> 
--->
+           <p>
+               I like video games (rts, fps, rpg, mmo, cracktorio, etc), programming, and cooking up a fine meal for myself in other. I'm quite fond of praising the Sun after my morning runs and supplying quirky humor on some of the more absurd moments in life.
+           </p>
+           <p>
+               Asides from that, hard work and determination has gotten me through most of 
+           </p>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <h2 class="mb-5">Awards</h2>
           <ul class="fa-ul mb-0">
-            <!-- <li>
+             <li>
               <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul> -->
+              LAHacks 2015 
+             </li> <a href="devpost.com/software/sketchless">(Best use of HeyWatch API)</a>
+                           
+                            
+          </ul> 
         </div>
       </section>
 
